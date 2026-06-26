@@ -1,0 +1,510 @@
+/* =========================================================
+   MODERN FORM STYLING - CHABADONE
+   Target: Tefillin Tuesdays Breakfast (ID: 7387264)
+   Theme: Mint Green (#359771) - Compact Version
+========================================================= */
+
+/* --- 0. CRUCIAL: Enforce Jotform Conditional Logic First --- */
+form[id="7387264"] .hide,
+form[id="7387264"] tr.hide,
+form[id="7387264"] td.hide,
+form[id="7387264"] div.hide,
+form[id="7387264"] tbody.hide {
+    display: none !important;
+}
+
+/* --- 1. Global Form Reset & Typography --- */
+form[id="7387264"] {
+    font-family: 'Montserrat', 'Open Sans', Arial, sans-serif !important;
+    color: #333 !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+}
+
+form[id="7387264"] .form-all {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Form Line - Tighter padding to save space */
+form[id="7387264"] .form-line {
+    display: block !important;
+    padding: 8px 0 !important; 
+    margin: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+form[id="7387264"] .form-line[style*="none"] {
+    display: none !important;
+}
+
+/* --- 2. Labels (FORCED ON TOP) --- */
+form[id="7387264"] .form-label,
+form[id="7387264"] .form-label-left,
+form[id="7387264"] .form-label-right,
+form[id="7387264"] .form-label-top {
+    color: #246b4f !important; /* Darker Mint Green */
+    font-weight: 700 !important;
+    font-size: 18px !important; 
+    margin-bottom: 4px !important; /* Tighter gap below label */
+    display: block !important;
+    width: 100% !important;
+    text-align: left !important;
+    float: none !important; 
+    clear: both !important; 
+}
+
+form[id="7387264"] .form-sub-label {
+    color: #8b8b8b !important;
+    font-size: 13px !important;
+    margin-top: 4px !important;
+    font-weight: normal !important;
+}
+
+/* --- 3. Inputs (Text, Select, Phone) --- */
+form[id="7387264"] .form-input,
+form[id="7387264"] .form-input-wide {
+    clear: both !important; 
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+form[id="7387264"] .form-textbox,
+form[id="7387264"] .form-dropdown,
+form[id="7387264"] .form-textarea {
+    width: 100% !important;
+    height: 44px !important; /* Slimmer text boxes */
+    padding: 0 15px !important; 
+    border: 1px solid #ccc !important;
+    border-radius: 8px !important;
+    box-sizing: border-box !important;
+    font-size: 16px !important;
+    color: #333 !important;
+    font-style: normal !important; 
+    background-color: #fff !important;
+    transition: all 0.3s ease !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+form[id="7387264"] .form-textarea {
+    height: auto !important;
+    padding: 12px 15px !important; 
+}
+
+form[id="7387264"] .form-textbox:focus,
+form[id="7387264"] .form-dropdown:focus {
+    border-color: #359771 !important;
+    box-shadow: 0 0 0 2px rgba(53, 151, 113, 0.2) !important;
+}
+
+/* --- 4. Layout: Side-by-Side Flex --- */
+/* First & Last Name */
+form[id="7387264"] #cid_1 {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 15px !important;
+    width: 100% !important;
+}
+form[id="7387264"] .form-sub-label-container {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+    margin: 0 !important;
+}
+form[id="7387264"] .form-sub-label-container input,
+form[id="7387264"] .form-sub-label-container select { order: 1 !important; }
+form[id="7387264"] .form-sub-label-container label.form-sub-label { order: 2 !important; }
+
+/* Address Block */
+form[id="7387264"] .form-address-table { width: 100% !important; display: block !important; }
+form[id="7387264"] .form-address-table tbody { display: flex !important; flex-direction: column !important; gap: 8px !important; width: 100% !important; }
+form[id="7387264"] .form-address-table tr:not(.hide) { display: flex !important; flex-direction: row !important; gap: 15px !important; width: 100% !important; }
+form[id="7387264"] .form-address-table td { display: flex !important; flex-direction: column !important; flex: 1 !important; padding: 0 !important; }
+
+/* --- 5. Radio Buttons & Checkboxes --- */
+form[id="7387264"] .form-single-column,
+form[id="7387264"] .form-multiple-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important; /* Tighter gaps between options */
+    width: 100% !important;
+}
+
+form[id="7387264"] .form-radio-item,
+form[id="7387264"] .form-checkbox-item {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important; 
+    border: 1px solid #ccc !important;
+    border-radius: 8px !important;
+    padding: 0 !important; 
+    margin: 0 !important;
+    background: #fff !important;
+    transition: all 0.2s ease !important;
+    min-height: 46px !important; /* Slimmer boxes */
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+/* ACTIVE STATE (Mint Green when checked) */
+form[id="7387264"] .form-radio-item:has(input:checked),
+form[id="7387264"] .form-checkbox-item:has(input:checked) {
+    background-color: #e8f4ef !important;
+    border-color: #359771 !important;
+}
+
+form[id="7387264"] input.form-radio,
+form[id="7387264"] input.form-checkbox,
+form[id="7387264"] input.form-checkbox-other {
+    margin: 0 0 0 20px !important; 
+    align-self: center !important; 
+    width: 20px !important;
+    height: 20px !important;
+    accent-color: #359771 !important;
+    cursor: pointer !important;
+    flex-shrink: 0 !important;
+    display: inline-block !important; 
+    opacity: 1 !important;
+    z-index: 2 !important;
+}
+
+form[id="7387264"] .form-radio-item label,
+form[id="7387264"] .form-checkbox-item label {
+    margin: 0 !important;
+    padding: 12px 20px 12px 15px !important; /* Slimmer padding */
+    color: #333 !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    flex: 1 !important; 
+    display: flex !important;
+    align-items: center !important;
+    height: auto !important;
+}
+
+/* --- 6. The Number Spinner (Bulletproof Plugin Override) --- */
+/* Hide native browser arrows */
+form[id="7387264"] .form-spinner-input::-webkit-outer-spin-button,
+form[id="7387264"] .form-spinner-input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+}
+form[id="7387264"] .form-spinner-input {
+    -moz-appearance: textfield !important;
+}
+
+/* 1. Nuke the plugin's table layout */
+form[id="7387264"] table:has(.form-spinner-up) {
+    display: block !important;
+    position: relative !important;
+    width: 150px !important;
+    height: 44px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    background: #fff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-collapse: collapse !important;
+}
+form[id="7387264"] table:has(.form-spinner-up) tbody,
+form[id="7387264"] table:has(.form-spinner-up) tr {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* 2. Center the Input Box perfectly */
+form[id="7387264"] .form-spinner-input-td {
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 45px !important; 
+    right: 45px !important; 
+    height: 100% !important;
+    width: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+}
+form[id="7387264"] .form-spinner-input-td input {
+    width: 100% !important;
+    height: 100% !important;
+    text-align: center !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* 3. Strip all inline script styles and lock the buttons */
+form[id="7387264"] .form-spinner-down,
+form[id="7387264"] .form-spinner-up {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 45px !important;
+    height: 100% !important;
+    padding: 0 !important; /* Forces the script's inline padding to zero */
+    margin: 0 !important;
+    background: #359771 !important; 
+    color: #fff !important;
+    cursor: pointer !important;
+    z-index: 10 !important;
+    opacity: 1 !important; /* Forces them to stay visible permanently */
+    visibility: visible !important;
+    transition: background 0.2s ease !important;
+}
+
+form[id="7387264"] .form-spinner-down {
+    left: 0 !important;
+    border: none !important;
+    border-right: 1px solid #2a7a5a !important; 
+}
+form[id="7387264"] .form-spinner-up {
+    right: 0 !important;
+    border: none !important;
+    border-left: 1px solid #2a7a5a !important; 
+}
+
+/* 4. Button Hovers */
+form[id="7387264"] .form-spinner-down:hover,
+form[id="7387264"] .form-spinner-up:hover {
+    background: #2a7a5a !important;
+}
+
+/* 5. Hide the tiny script arrows */
+form[id="7387264"] .form-spinner-down img,
+form[id="7387264"] .form-spinner-up img {
+    display: none !important;
+}
+
+/* 6. Perfect Center Math for the +/- */
+form[id="7387264"] .form-spinner-down::after {
+    content: '-' !important;
+    font-size: 36px !important;
+    line-height: 0 !important; /* Collapses the text height for perfect centering */
+    margin-top: -4px !important;
+    font-weight: 300 !important;
+}
+form[id="7387264"] .form-spinner-up::after {
+    content: '+' !important;
+    font-size: 30px !important;
+    line-height: 0 !important; /* Collapses the text height for perfect centering */
+    margin-top: -2px !important;
+    font-weight: 300 !important;
+}
+
+/* --- 7. Total Amount Box --- */
+form[id="7387264"] #cid_8 {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    background-color: #f8f8fa !important;
+    border: 1px solid #ccc !important;
+    border-radius: 8px !important;
+    padding: 15px 20px !important; /* Slimmer padding */
+    margin-top: 5px !important; /* Tighter gap */
+}
+form[id="7387264"] #cid_8 label { 
+    margin: 0 !important; 
+    font-size: 18px !important; 
+    font-weight: 700 !important; 
+    color: #333 !important;
+}
+form[id="7387264"] #total_amount { 
+    font-size: 26px !important; 
+    font-weight: 800 !important; 
+    color: #359771 !important; 
+    padding: 0 !important; 
+}
+
+/* --- 8. Payment / Credit Card Fields --- */
+form[id="7387264"] .js-cc-number { padding-left: 15px !important; background-image: none !important; }
+
+form[id="7387264"] .credit_card:not(.hide) > td > table { 
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important; /* Tighter row gaps */
+    width: 100% !important; 
+    border: 1px solid #ccc !important;
+    padding: 15px !important; /* Slimmer inner padding */
+    border-radius: 8px !important;
+    background: #fafafa !important;
+    margin-top: 10px !important;
+}
+form[id="7387264"] .credit_card:not(.hide) > td > table > tbody { display: flex !important; flex-direction: column !important; gap: 10px !important; width: 100% !important;}
+form[id="7387264"] .credit_card:not(.hide) > td > table > tbody > tr { 
+    display: flex !important; 
+    flex-direction: row !important;
+    width: 100% !important; 
+    gap: 12px !important; 
+}
+form[id="7387264"] .credit_card td, form[id="7387264"] .cc-field-wrapper { display: flex !important; flex-direction: column !important; flex: 1 !important; padding: 0 !important; }
+form[id="7387264"] .credit_card th { display: none !important; }
+form[id="7387264"] .other { padding: 10px 0 0 0 !important; font-size: 15px !important; color: #555 !important; line-height: 1.5 !important; }
+
+/* --- 9. Submit Button Centered --- */
+form[id="7387264"] .form-buttons-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin: 20px 0 0 0 !important; /* Tighter top gap */
+    padding: 0 !important;
+    text-indent: 0 !important;
+}
+form[id="7387264"] .form-submit-button {
+    background-color: #359771 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 12px 40px !important; /* Slightly slimmer button */
+    font-size: 18px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    max-width: 350px !important;
+    transition: filter 0.3s ease, transform 0.1s ease !important;
+}
+form[id="7387264"] .form-submit-button:hover { filter: brightness(1.15) !important; transform: translateY(-2px) !important; }
+
+/* =========================================================
+   "OTHER" CHECKBOX FIX (100% Hitbox Overlay)
+========================================================= */
+form[id="7387264"] .form-checkbox-item:has(.form-checkbox-other) {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+}
+
+form[id="7387264"] input.form-checkbox-other {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    margin: 0 !important;
+    width: 100% !important; 
+    height: 100% !important;
+    cursor: pointer !important;
+    z-index: 5 !important;
+    outline: none !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+form[id="7387264"] input.form-checkbox-other::before {
+    content: "" !important;
+    position: absolute !important;
+    left: 20px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid #767676 !important; 
+    border-radius: 3px !important; 
+    background-color: #fff !important;
+    box-sizing: border-box !important;
+    transition: all 0.1s ease !important;
+}
+
+form[id="7387264"] input.form-checkbox-other:checked::before {
+    background-color: #359771 !important;
+    border-color: #359771 !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round' d='M3.5 8.5l3 3L12.5 4'/%3E%3C/svg%3E") !important;
+    background-size: 15px !important; 
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+form[id="7387264"] .form-checkbox-item:has(.form-checkbox-other) span {
+    display: flex !important;
+    align-items: center !important;
+    flex: none !important;
+    padding: 0 !important;
+    margin-left: 55px !important; 
+    position: relative !important;
+    z-index: 10 !important; 
+}
+
+form[id="7387264"] .form-checkbox-other-input {
+    margin: 0 !important;
+    padding: 8px 12px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    height: auto !important;
+    width: 130px !important; 
+    max-width: none !important;
+    font-size: 15px !important;
+    background: #fff !important;
+    cursor: text !important;
+    display: block !important;
+    position: relative !important;
+}
+
+/* =========================================================
+   BOTTOM FIXES: Payment Methods & Mobile Layout 
+========================================================= */
+
+/* Payment Methods (CC / Check) Side-by-Side dynamically */
+form[id="7387264"] .form-single-column:has(input.paymentMethod),
+form[id="7387264"] .form-multiple-column:has(input.paymentMethod) {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 15px !important;
+    width: 100% !important;
+}
+
+form[id="7387264"] .form-radio-item:has(input.paymentMethod) {
+    flex: 1 !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 600px) {
+    /* Stack Address Fields Mobile Fix */
+    form[id="7387264"] .form-address-table tr:not(.hide) {
+        flex-direction: column !important;
+    }
+
+    /* Wrap Credit Card Row */
+    form[id="7387264"] .credit_card:not(.hide) > td > table > tbody > tr {
+        flex-wrap: wrap !important;
+    }
+
+    /* Force CC Number container 100% */
+    form[id="7387264"] .credit_card td:has(.js-cc-number) {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+    }
+
+    /* Force CVV container 100% */
+    form[id="7387264"] .credit_card td:has([id*="cc_ccv"]),
+    form[id="7387264"] .credit_card td:has([name*="ccv"]),
+    form[id="7387264"] .credit_card td:has([autocomplete="cc-csc"]) {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+    }
+
+    /* Stack Payment Methods */
+    form[id="7387264"] .form-single-column:has(input.paymentMethod),
+    form[id="7387264"] .form-multiple-column:has(input.paymentMethod) {
+        flex-direction: column !important;
+    }
+}
