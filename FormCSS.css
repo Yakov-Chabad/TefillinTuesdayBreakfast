@@ -1,12 +1,11 @@
-<!-- Form Shield: Blocks Chabad's JS from altering custom-designed forms -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const customForms = ["7387264"];
-    if (customForms.some(id => document.querySelector('form[id="' + id + '"]'))) {
-      window.__formInteractionsInitialized = true;
-    }
-  }, { once: true });
-</script>
+/* =========================================================
+   IMMUNIZATION: Disable Chabad's container query styles
+   Targets: 7411646, 7421598, 7382223, 7387264
+========================================================= */
+html:has(form:is([id="7387264"])),
+html:has(form:is([id="7387264"])) body {
+    --primary-form-color: initial !important;
+}
 /* =========================================================
    MODERN FORM STYLING - CHABADONE
    Target: Tefillin Tuesdays Breakfast (ID: 7387264)
