@@ -1,12 +1,4 @@
 /* =========================================================
-   IMMUNIZATION: Disable Chabad's container query styles
-   Targets: 7411646, 7421598, 7382223, 7387264
-========================================================= */
-html:has(form:is([id="7387264"])),
-html:has(form:is([id="7387264"])) body {
-    --primary-form-color: initial !important;
-}
-/* =========================================================
    MODERN FORM STYLING - CHABADONE
    Target: Tefillin Tuesdays Breakfast (ID: 7387264)
    Theme: Mint Green (#359771) - Compact Version
