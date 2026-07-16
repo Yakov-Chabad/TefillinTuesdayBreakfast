@@ -1,3 +1,12 @@
+<!-- Form Shield: Blocks Chabad's JS from altering custom-designed forms -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const customForms = ["7387264"];
+    if (customForms.some(id => document.querySelector('form[id="' + id + '"]'))) {
+      window.__formInteractionsInitialized = true;
+    }
+  }, { once: true });
+</script>
 /* =========================================================
    MODERN FORM STYLING - CHABADONE
    Target: Tefillin Tuesdays Breakfast (ID: 7387264)
